@@ -23,15 +23,8 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
   const offset = circumference - (percentage / 100) * circumference;
 
   return (
-    <div 
-      className={`relative circular-progress`}
-      data-size={size}
-    >
-      <svg
-        width={size}
-        height={size}
-        className="transform -rotate-90"
-      >
+    <div className={`relative circular-progress`} data-size={size}>
+      <svg width={size} height={size} className="transform -rotate-90">
         {/* Background circle */}
         <circle
           cx={center}
