@@ -1,5 +1,4 @@
 import React from "react";
-import "./CircularProgress.css";
 
 interface CircularProgressProps {
   percentage: number;
