@@ -1,4 +1,5 @@
 import React from "react";
+import "./CircularProgress.css";
 
 interface CircularProgressProps {
   percentage: number;
@@ -24,8 +25,8 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
 
   return (
     <div 
-      className="relative" 
-      style={{ width: `${size}px`, height: `${size}px` }}
+      className={`relative circular-progress`}
+      data-size={size}
     >
       <svg
         width={size}
